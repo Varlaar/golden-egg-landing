@@ -1,0 +1,126 @@
+.home {
+  min-height: 800px;
+  position: relative;
+
+  &__img,
+  &__video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  &__container {
+    @include flex(row, space-between, flex-start);
+    position: absolute;
+    top: 290px;
+    right: 0;
+    left: 0;
+    bottom: 108px;
+    z-index: 2;
+  }
+
+  .time-work {
+    font-weight: 700;
+    font-size: 12px;
+    color: $white;
+    transform: rotate(-90deg);
+    margin-top: 140px;
+    margin-left: -75px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #252525 0%, rgba(0, 0, 0, 0.7) 100%);
+  }
+
+  &__center-content {
+    text-align: center;
+
+    .title {
+      color: $yellow;
+      font-family: $kurale;
+      font-size: 72px;
+      font-weight: 400;
+      margin-top: 24px;
+
+      &::after {
+        @include line;
+      }
+    }
+
+    .subtitle {
+      color: $white;
+      font-size: $text;
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 80px;
+    @include flex(row, center, center);
+
+    .bth-order,
+    .bth-about {
+      width: 200px;
+      height: 60px;
+      border-radius: 5px;
+      line-height: 60px;
+      color: $white;
+      font-size: 12px;
+      font-weight: 700;
+      transition: $transition;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+
+      &:hover {
+        background: $yellow;
+      }
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &_background {
+        background: $yellow;
+        border: none;
+
+        &:hover {
+          background: darken($color: $yellow, $amount: 15%);
+        }
+      }
+    }
+  }
+
+  .bth-arrow {
+    display: block;
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    transition: $transition;
+    margin: $mc;
+
+    &:hover {
+      background: $yellow;
+    }
+  }
+
+  .socials {
+    width: 62px;
+    margin-top: 40px;
+
+    &__item {
+      display: block;
+      height: 62px;
+      border-radius: 50%;
+      transition: $transition;
+      margin-bottom: 20px;
+
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+
+}

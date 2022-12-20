@@ -1,0 +1,38 @@
+.header__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 683px;
+    z-index: 2;
+
+    .menu {
+        @include flex(row, center, center);
+
+        &__item {
+            margin: 0 5px;
+
+            a {
+                display: block;
+                color: $white;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 40px 25px;
+                transition: $transition;
+                text-transform: uppercase;
+                border-top: 5px solid transparent;
+
+                &:hover {
+                    color: $yellow;
+                    border-top: 5px solid $yellow;
+                }
+            }
+        }
+
+        &__logo {
+            margin: 0 70px;
+            position: relative;
+            top: 16px;
+        }
+    }
+}

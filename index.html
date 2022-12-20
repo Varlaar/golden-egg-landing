@@ -18,11 +18,68 @@
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
-    <a href="#">
-      <svg>
-        <use xlink:href="./assets/img/sprite-icons.svg#facebook"></use>
-      </svg>
-    </a>
+    <div class="wrapper">
+      <section class="home">
+        <video
+          class="home__video"
+          src="./assets/img/dish.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div class="container header__container">
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="#about">О ресторане</a></li>
+              <li class="menu__item"><a href="#team">Команда</a></li>
+              <li class="menu__item"><a href="#order">Заказать</a></li>
+              <img class="menu__logo" src="./assets/img/logo.png" alt="" />
+              <li class="menu__item"><a href="#menu">Меню</a></li>
+              <li class="menu__item"><a href="#events">Мероприятия</a></li>
+              <li class="menu__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container home__container">
+          <div class="time-work">Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</div>
+          <div class="home__center-content">
+            <h6 class="subtitle">РЕСТОРАН</h6>
+            <h1 class="title">GOLDEN EGG</h1>
+            <div class="home__buttons">
+              <a class="bth-order bth-order_background" href="#order"
+                >ЗАКАЗАТЬ СТОЛИК</a
+              >
+              <a class="bth-about" href="#about">О РЕСТОРАНЕ</a>
+            </div>
+            <a class="bth-arrow" href="#about">
+              <svg>
+                <use
+                  xlink:href="./assets/img/sprite-icons.svg#circle-arrow-bth"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <div class="socials">
+            <a class="socials__item" href="#" target="_blank">
+              <svg>
+                <use xlink:href="./assets/img/sprite-icons.svg#facebook"></use>
+              </svg>
+            </a>
+            <a class="socials__item" href="#" target="_blank">
+              <svg>
+                <use xlink:href="./assets/img/sprite-icons.svg#twitter"></use>
+              </svg>
+            </a>
+            <a class="socials__item" href="#" target="_blank">
+              <svg>
+                <use xlink:href="./assets/img/sprite-icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--end wrapper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
