@@ -4,14 +4,17 @@ $white: #fff;
 $yellow: #E8C300;
 $color: #000;
 $text: 18px;
-$wrapper: 1470px;
-$container: 1275px;
+$wrapper: 2600px;
+$container: 1305px;
 $mc: 0 auto;
-$transition: 0.3s;
+$transition: 0.3s ease;
+$border-radius: 5px;
+$white-opacity: rgba(255, 255, 255, 0.5);
+$black-opacity: rgba(0, 0, 0, 0.5);
 
 @mixin flex($fd, $jc, $ai) {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: $fd;
     justify-content: $jc;
     align-items: $ai;
@@ -29,6 +32,18 @@ $transition: 0.3s;
     margin-bottom: 30px;
 }
 
+@mixin size($wth, $ht) {
+    width: $wth;
+    height: $ht;
+}
+
+@mixin img() {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 50px $black-opacity);
+    border-radius: $border-radius;
+}
+
 body {
     font-family: $os;
     background-color: $white;
@@ -44,10 +59,39 @@ svg {
 .wrapper {
     max-width: $wrapper;
     margin: $mc;
-    padding: 0 15px;
 }
 
 .container {
     max-width: $container;
     margin: $mc;
+    padding: 0 15px;
+    // border: 1px solid red;
+}
+
+.circle {
+    @include size(250px, 250px);
+    border: 20px solid $yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    filter: drop-shadow(0px 0px 100px $black-opacity);
+}
+
+section h2 {
+    font-weight: 400;
+    font-size: 42px;
+    font-family: $kurale;
+
+    &::after {
+        @include line;
+    }
+}
+
+section p {
+    line-height: 175%;
+    margin-bottom: 26px;
+}
+
+.subtitle {
+    font-weight: 700;
 }

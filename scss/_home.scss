@@ -4,8 +4,7 @@
 
   &__img,
   &__video {
-    width: 100%;
-    height: 100%;
+    @include size(100%, 100%);
     position: absolute;
     object-fit: cover;
   }
@@ -24,9 +23,10 @@
     font-weight: 700;
     font-size: 12px;
     color: $white;
-    transform: rotate(-90deg);
-    margin-top: 140px;
-    margin-left: -75px;
+    width: 60px;
+    margin-top: 60px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
   }
 
   &::after {
@@ -64,8 +64,7 @@
 
     .bth-order,
     .bth-about {
-      width: 200px;
-      height: 60px;
+      @include size(200px, 60px);
       border-radius: 5px;
       line-height: 60px;
       color: $white;
@@ -94,9 +93,8 @@
   }
 
   .bth-arrow {
+    @include size(62px, 62px);
     display: block;
-    height: 62px;
-    width: 62px;
     border-radius: 50%;
     transition: $transition;
     margin: $mc;
@@ -107,12 +105,11 @@
   }
 
   .socials {
-    width: 62px;
     margin-top: 40px;
 
     &__item {
+      @include size(62px, 62px);
       display: block;
-      height: 62px;
       border-radius: 50%;
       transition: $transition;
       margin-bottom: 20px;
@@ -122,5 +119,4 @@
       }
     }
   }
-
 }

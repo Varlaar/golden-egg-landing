@@ -1,0 +1,28 @@
+.about {
+    padding: 100px 0 106px 0;
+
+    &__container {
+        @include flex(row, space-between, center);
+    }
+
+    &__text {
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    &__image {
+        width: 50%;
+        max-width: 500px;
+        position: relative;
+
+        .image-restaurant {
+            @include img;
+        }
+
+        .circle {
+            right: -20px;
+            transform: translate(40%, -50%);
+        }
+    }
+}
