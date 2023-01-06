@@ -1,0 +1,115 @@
+.order {
+    padding: 100px 0 46px;
+
+    &__container {
+        @include flex(row, space-between, center)
+    }
+
+    &__content {
+        width: 50%;
+        max-width: 565px;
+        text-align: center;
+    }
+
+    .form {
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+
+        input {
+            width: calc(50% - 5px);
+            margin-bottom: 10px;
+            background-color: $gray;
+            border-radius: $border-radius;
+            padding: 0 20px;
+            height: 60px;
+            font-size: 14px;
+            border: 1px solid transparent;
+
+            &::placeholder {
+                color: $gray-opacity;
+            }
+
+            &:focus {
+                border: 1px solid $yellow;
+            }
+        }
+
+        .select {
+            width: calc(50% - 5px);
+            margin-bottom: 10px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 20px;
+                height: 20px;
+                background: url(/assets/img/select-arrow.svg) center no-repeat;
+                position: absolute;
+                right: 10px;
+                top: calc(50% - 10px);
+                pointer-events: none;
+            }
+
+
+            select {
+                width: 100%;
+                background-color: $gray;
+                border: 1px solid transparent;
+                height: 60px;
+                padding: 0 20px;
+                border-radius: $border-radius;
+                font-size: 14px;
+                outline: none;
+                appearance: none;
+
+                &:not(:valid) {
+                    color: $gray-opacity;
+                }
+
+                option {
+                    color: $color;
+                }
+            }
+        }
+    }
+
+    &__button {
+        border-radius: $border-radius;
+        width: 100%;
+        background-color: $yellow;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 60px;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover {
+            background-color: darken($yellow, 15%);
+        }
+    }
+
+    &__image {
+        width: 50%;
+        max-width: 475px;
+        position: relative;
+
+        .image-order {
+            @include img;
+        }
+
+        .circle {
+            right: -20px;
+            transform: translate(40%, -50%);
+        }
+    }
+
+    &__contacts {
+        font-weight: 400;
+        font-size: 14px;
+        color: $gray-opacity;
+        padding: 45px 0;
+        text-align: center;
+    }
+}

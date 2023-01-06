@@ -1,0 +1,80 @@
+.special {
+
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 0.5em;
+        color: $white;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        top: 45px;
+    }
+
+    &__slide {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/bg-slide.jpg) center/cover no-repeat;
+        padding: 105px 0 95px;
+    }
+
+    &__slide-container {
+        @include flex(row, space-between, center);
+        padding: 20px 0;
+    }
+
+    &__image {
+        width: 50%;
+        max-width: 475px;
+        position: relative;
+
+        .image-special {
+            @include img;
+        }
+
+        .circle {
+            left: -20px;
+            transform: translate(-40%, -50%);
+        }
+    }
+
+    &__text {
+        color: $white;
+        text-align: center;
+        width: 50%;
+        max-width: 600px;
+        padding-left: 30px;
+    }
+
+    .special__pagination {
+        @include flex (row, center, center);
+        position: absolute;
+        width: 100%;
+        bottom: 45px;
+        z-index: 2;
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $white-opacity;
+            cursor: pointer;
+            transition: $transition;
+            opacity: 70%;
+            margin: 0 10px;
+
+            &:hover {
+                background: $white;
+                opacity: 100%;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $white;
+            opacity: 100%;
+        }
+    }
+}
