@@ -74,7 +74,7 @@
       border: 1px solid rgba(255, 255, 255, 0.5);
 
       &:hover {
-        background: $yellow;
+        background-color: $yellow;
       }
 
       &:not(:last-child) {
@@ -82,11 +82,11 @@
       }
 
       &_background {
-        background: $yellow;
+        background-color: $yellow;
         border: none;
 
         &:hover {
-          background: darken($color: $yellow, $amount: 15%);
+          background-color: darken($yellow, 15%);
         }
       }
     }
@@ -100,7 +100,7 @@
     margin: $mc;
 
     &:hover {
-      background: $yellow;
+      background-color: $yellow;
     }
   }
 
@@ -115,7 +115,7 @@
       margin-bottom: 20px;
 
       &:hover {
-        background: $yellow;
+        background-color: $yellow;
       }
     }
   }

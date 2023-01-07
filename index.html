@@ -148,8 +148,155 @@
         </div>
       </section>
       <!--end team-->
+
+      <!--order-->
+      <section class="order" id="order">
+        <div class="container order__container">
+          <div class="order__content">
+            <h2>ЗАКАЗАТЬ СТОЛИК</h2>
+            <form action="" class="form">
+              <input type="text" placeholder="Имя" required />
+              <input type="text" placeholder="Email" required />
+              <input type="text" placeholder="Телефон" required />
+              <div class="select">
+                <select required>
+                  <option value="">Кол-во людей</option>
+                  <option value="1">1</option>
+                  <option value="2-5">2-5</option>
+                  <option value="5-10">5-10</option>
+                  <option value="10-40">10-40</option>
+                  <option value="40-100">40-100</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Дата (дата/месяц)" required />
+              <div class="select">
+                <select required>
+                  <option value="">Время</option>
+                  <option value="10:00 - 14:00">10:00 - 14:00</option>
+                  <option value="14:00 - 18:00">14:00 - 18:00</option>
+                  <option value="18:00 - 23:00">18:00 - 23:00</option>
+                </select>
+              </div>
+              <button class="order__button" type="submit">
+                ОФОРМИТЬ ЗАКАЗ
+              </button>
+            </form>
+          </div>
+          <div class="order__image">
+            <img
+              class="image-order"
+              src="./assets/img/order-img.jpg"
+              alt="order"
+            />
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="container">
+          <h6 class="order__contacts">
+            Пн - Пт: <strong>8 - 22,</strong> Сб - Вс:
+            <strong>9 - 23,</strong> Телефон:
+            <strong
+              ><a href="tel:+38098 729 13 67">+38098 729 13 67</a>/<a
+                href="tel:+38097 458 78 79"
+              >
+                +38097 458 78 79</a
+              ></strong
+            >
+          </h6>
+        </div>
+      </section>
+      <!--end order-->
+
+      <!--special-->
+      <section class="special">
+        <div class="container special__container">
+          <h6 class="special__title">СПЕЦ-ПРЕДЛОЖЕНИЯ</h6>
+        </div>
+        <div class="swiper special__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide special__slide">
+              <div class="container special__slide-container">
+                <div class="special__image">
+                  <img
+                    class="image-special"
+                    src="/assets/img/slide1.jpg"
+                    alt="golden-egg"
+                  />
+                  <div class="circle"></div>
+                </div>
+                <div class="special__text">
+                  <h2>GOLDEN EGG</h2>
+                  <p class="subtitle">
+                    Невероятно красивый десерт Пирожное "Golden Egg". 3D
+                    пирожное в форме яйца в гнёздышке.
+                  </p>
+                  <p>
+                    Узнать, каково золото на вкус, приглашаем в наш ресторан.
+                    Темный бельгийский шоколад, Амаретто, мусс мята-лемонграсс,
+                    центр морковь-маракуйя — удержаться почти невозможно.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide special__slide">
+              <div class="container special__slide-container">
+                <div class="special__image">
+                  <img
+                    class="image-special"
+                    src="/assets/img/slide2.jpg"
+                    alt="duck tales"
+                  />
+                  <div class="circle"></div>
+                </div>
+                <div class="special__text">
+                  <h2>УТИННЫЕ ИСТОРИИ</h2>
+                  <p class="subtitle">
+                    Утиные ножки здесь маринуют с травами, запекают, а потом
+                    тушат, пока мясо не приобретет нежную текстуру.
+                  </p>
+                  <p>
+                    К утке подают красную капусту, томлёную в красном вине, а
+                    также толчёный картофель со шкварками. Фермерскую утиную
+                    грудку обжаривают и подают с соусом демиглас и вишнёвым
+                    кули, а также с нежным картофельным гратеном, запечённым со
+                    сливками, тимьяном и сыром пармезан.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide special__slide">
+              <div class="container special__slide-container">
+                <div class="special__image">
+                  <img
+                    class="image-special"
+                    src="/assets/img/slide2.jpg"
+                    alt="duck tales"
+                  />
+                  <div class="circle"></div>
+                </div>
+                <div class="special__text">
+                  <h2>КРОЛИЧЬИ ЛАПКИ</h2>
+                  <p class="subtitle">
+                    Утиные ножки здесь маринуют с травами, запекают, а потом
+                    тушат, пока мясо не приобретет нежную текстуру.
+                  </p>
+                  <p>
+                    К утке подают красную капусту, томлёную в красном вине, а
+                    также толчёный картофель со шкварками. Фермерскую утиную
+                    грудку обжаривают и подают с соусом демиглас и вишнёвым
+                    кули, а также с нежным картофельным гратеном, запечённым со
+                    сливками, тимьяном и сыром пармезан.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination special__pagination"></div>
+        </div>
+      </section>
+      <!--end special-->
     </div>
     <!--end wrapper-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>
