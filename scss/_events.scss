@@ -1,0 +1,84 @@
+.events {
+    background: url(/assets/img/events/events-bg.jpg) center/cover no-repeat;
+    padding-bottom: 50px;
+
+    &__container {
+        @include flex(row, space-between, center);
+        margin: 45px auto;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 0.5em;
+        color: $white;
+        z-index: 2;
+        width: 100%;
+        top: 45px;
+        margin: 45px 0 0;
+    }
+
+    &__left-container {
+        position: relative;
+
+        .circle {
+            left: 90px;
+            transform: translate(-40%, -50%);
+            z-index: 5;
+        }
+    }
+
+    &__right-container {
+        position: relative;
+
+        .circle {
+            right: 90px;
+            transform: translate(40%, -50%);
+            z-index: 5;
+        }
+    }
+
+    &__image-left,
+    &__image-right {
+        @include img;
+    }
+
+    &__image-left {
+        padding-left: 120px;
+    }
+
+    &__image-right {
+        padding-right: 120px;
+    }
+
+    &__subtitle {
+        background: $color;
+        border-radius: 0px 5px 5px 0px;
+        font-weight: 400;
+        font-size: 24px;
+        text-indent: 20px;
+        color: $white;
+        font-family: $kurale;
+        padding: 0 20px;
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        right: 0;
+
+        &_right {
+            right: auto;
+            left: 0;
+            transform: scale(-1);
+        }
+    }
+
+    &__contacts {
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        color: $white-opacity;
+        line-height: 12px;
+    }
+}

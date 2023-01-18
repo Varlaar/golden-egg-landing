@@ -38,3 +38,14 @@ select {
     color: inherit;
     outline: none;
 }
+
+textarea {
+    resize: none;
+}
+
+button,
+ul,
+li {
+  user-select: none;
+  cursor: pointer;
+}
